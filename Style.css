@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 25px 12px;
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(5, 13, 30, 0.65), rgba(5, 13, 30, 0.75)),
+        url("fundo.jpg") center / cover fixed no-repeat;
+    background-color: #071326;
+    color: #f4f7ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 38px;
+}
+
+h1 span {
+    color: #ffffff;
+}
+
+header p,
+#idade,
+footer {
+    color: white;
+}
+
+.card {
+    padding: 25px;
+    background: rgba(7, 19, 38, 0.94);
+    border: 1px solid #14283f;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+form > label {
+    display: block;
+    margin: 15px 0 6px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #405574;
+    border-radius: 5px;
+    background: #101f35;
+    color: white;
+}
+
+.pergunta {
+    margin: 24px 0;
+    padding: 0;
+    border: none;
+}
+
+legend {
+    margin-bottom: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.pergunta label {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 12px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pergunta input[type="radio"] {
+    margin-top: 3px;
+    accent-color: #57baff;
+    flex-shrink: 0;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #480ca9;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#mensagem {
+    color: #ffb8c0;
+    font-size: 14px;
+}
+
+#imagem-perfil {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    max-height: 300px;
+    margin: 20px auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#categoria-perfil {
+    color: #57baff;
+    font-weight: bold;
+}
+
+#descricao-perfil {
+    line-height: 1.7;
+}
+
+#pontuacao {
+    color: #c2cde0;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 18px 10px;
+        background-attachment: scroll;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
